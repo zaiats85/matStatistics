@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+See the console
+
+<div id="chart-description">
+    <h2>Варіаційний ряд</h2>
+    <p>Variance: <span id="variance"> </span></p>
+    <p>Sample Mean: <span id="sample-mean"></span></p>
+    <input id="rangeInput" name="rangeInput" type="range" min="0" max="100" value="" step="1">
+    <input type="text" id="textInput" value="">
+</div>
+<div class="bar-chart"></div>
+
+<div id="corelation-description">
+    <h2>Point Estimation</h2>
+    <p> X = <span id="point-estimation-x"></span>
+        Y = <span id="point-estimation-y"></span>
+        X<sup>2</sup> = <span id="point-estimation-x2"></span>
+        Y<sup>2</sup> = <span id="point-estimation-y2"></span>
+        X*Y = <span id="point-estimation-xy"></span>
+        G<sup>2</sup><sub>x</sub> = <span id="standard-deviation-x"></span>
+        G<sup>2</sup><sub>y</sub> = <span id="standard-deviation-y"></span>
+        G<sub>x</sub> = <span id="deviation-x"></span>
+        G<sub>y</sub> = <span id="deviation-y"></span>
+        rV<sub>y</sub> = <span id="corelation-koef"></span>
+        R<sup>2</sup> = <span id="determination-koef"></span>
+    </p>
+    <h2>Кореляційна залежність</h2>
+    <div class="equation"></div>
+    <div class="equation"></div>
+    <div class="chart"></div>
+</div>
+
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script src="built/matStat.js"></script>
+<script src="barChart.js"></script>
+</body>
+</html>

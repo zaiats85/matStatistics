@@ -1,0 +1,92 @@
+.bar { fill: steelblue; }
+body {
+    font: 10px sans-serif;
+}
+select {
+    display: block;
+}
+.bar {
+    fill: purple;
+    opacity: 0.8;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#corelation, #statistics {
+    font-size: 14px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+}
+#statistics td, #statistics th, #corelation td, #corelation th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#statistics tr:nth-child(even){background-color: #f2f2f2;}
+#corelation tr:nth-child(even){background-color: #f2f2f2;}
+
+#statistics tr:hover {background-color: #ddd;}
+#corelation tr:hover {background-color: #ddd;}
+
+#statistics th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#corelation th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: goldenrod;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+.regression {
+    stroke-width: 2px;
+    stroke: steelblue;
+    stroke-dasharray: 10, 5;
+}
+.regression-2 {
+    stroke-width: 2px;
+    stroke: orangered;
+    stroke-dasharray: 10, 5;
+}
+
+.equation {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
